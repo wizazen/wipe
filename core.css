@@ -20,6 +20,7 @@ body{
     -o-background-size:cover;
 	background-repeat:no-repeat;
 	width:100%;
+	position:relative;
 }
 
 header {
@@ -55,16 +56,17 @@ header img {
 .social {
 	margin-top: 5px;
 	font-size:1.35em;
+	
 	}
 
 .social a {
 	padding: 10px 15px;
+	color:black;
 }
 
 header img,
 .social a{
 	display:block;
-	color:black;
 }
 
 .social a:hover,
@@ -83,14 +85,13 @@ h1{
 }
 
 .info{
-	position:relative;
-	height:100%;
+		position:absolute;
+	bottom: 20%;
+	right:5%;
 }
 
 section{
-	position:absolute;
-	bottom: 20%;
-	right:5%;
+
 	text-align:right;
 }
 
@@ -169,14 +170,24 @@ footer{
 }
 
 
+@media (min-width: 769px) {
+	header,
+	.social {
+		display: flex;
+	}
+	header {
+		flex-direction: column;
+		align-items: center;
+		width: 100%;
+		margin: 0 auto;
+	}
 
+}
 
+@media (min-width: 1025px) {
+	header {
+		flex-direction: row;
+		justify-content: space-between;
+	}
 
-
-
-
-
-
-
-
-
+}
