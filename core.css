@@ -84,12 +84,12 @@ h1{
 
 .info{
 	position:relative;
-	height:800px;
+	height:100%;
 }
 
 section{
 	position:absolute;
-	bottom: 0;
+	bottom: 20%;
 	right:5%;
 	text-align:right;
 }
@@ -166,29 +166,6 @@ footer{
 	text-align:center;
 	bottom:0;
 	font-family: 'Lato', sans-serif;
-}
-
-
-@media (min-width: 769px) {
-	header,
-	.social {
-		display: flex;
-	}
-	header {
-		flex-direction: column;
-		align-items: center;
-		width: 100%;
-		margin: 0 auto;
-	}
-
-}
-
-@media (min-width: 1025px) {
-	header {
-		flex-direction: row;
-		justify-content: space-between;
-	}
-
 }
 
 
